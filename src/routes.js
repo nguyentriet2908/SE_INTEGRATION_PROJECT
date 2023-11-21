@@ -17,20 +17,20 @@ var routes = [
   {
     path: "/notes",
     name: "Notes",
-    icon: "ni ni-planet text-blue",
+    icon: "ni ni-collection text-info",
     component: <Notes />,
     layout: "/admin",
   },
   {
     path: "/calendar",
     name: "Calendar",
-    icon: "ni ni-pin-3 text-orange",
+    icon: "ni ni-calendar-grid-58 text-green",
     component: <Calendar />,
     layout: "/admin",
   },
   {
-    path: "/user-profile",
-    name: "User Profile",
+    path: "/profile",
+    name: "Profile",
     icon: "ni ni-single-02 text-yellow",
     component: <Profile />,
     layout: "/admin",
@@ -38,7 +38,7 @@ var routes = [
   {
     path: "/tables",
     name: "Tables",
-    icon: "ni ni-bullet-list-67 text-red",
+    icon: "ni ni-bullet-list-67 text-blue",
     component: <Tables />,
     layout: "/admin",
   },
@@ -52,7 +52,7 @@ var routes = [
   {
     path: "/login",
     name: "Logout",
-    icon: "ni ni-key-25 text-info",
+    icon: "ni ni-button-power text-red",
     component: <Login />,
     layout: "/auth",
   },
