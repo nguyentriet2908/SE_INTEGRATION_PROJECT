@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 
+import { Card, Container, Row } from "reactstrap";
+
 import NoteContainer from "components/NoteContainer/NoteContainer";
 import Sidebar from "components/Sidebar/Sidebar2";
 
 import "./Notes.css";
 import NotesHeader from "components/Headers/NotesHeader";
+
 
 function Notes() {
   const [notes, setNotes] = useState(
@@ -50,15 +53,24 @@ function Notes() {
   return (
     <>
       <NotesHeader />
-    
-      <div className="Notes">
-      <Sidebar addNote={addNote} />
-      <NoteContainer
-        notes={notes}
-        deleteNote={deleteNote}
-        updateText={updateText}
-      />
-      </div>
+      <Container className="mt--9" fluid>
+        <Row>
+          <div className="col">
+            <Card className="shadow border-0">
+              <div className="Notes">
+              <Sidebar addNote={addNote} />
+              <NoteContainer
+                notes={notes}
+                deleteNote={deleteNote}
+                updateText={updateText}
+              />
+              </div>
+            </Card>
+          </div>
+        </Row>
+        
+      </Container>
+      
     </>
     
   );
