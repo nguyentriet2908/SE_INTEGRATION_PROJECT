@@ -1,8 +1,7 @@
 import Dashboard from "views/admin/Dashboard.js";
 import Profile from "views/admin/Profile.js";
 import Calendar from "views/admin/Calendar.js";
-import Register from "views/admin/Register.js";
-import Logout from "views/admin/Login.js";
+import Login from "views/admin/Login.js";
 import Tables from "views/admin/Tables.js";
 import Notes from "views/admin/Notes.js";
 import Icons from "views/admin/Icons.js";
@@ -18,20 +17,20 @@ var routes = [
   {
     path: "/notes",
     name: "Notes",
-    icon: "ni ni-planet text-blue",
+    icon: "ni ni-collection text-info",
     component: <Notes />,
     layout: "/admin",
   },
   {
     path: "/calendar",
     name: "Calendar",
-    icon: "ni ni-pin-3 text-orange",
+    icon: "ni ni-calendar-grid-58 text-green",
     component: <Calendar />,
     layout: "/admin",
   },
   {
-    path: "/user-profile",
-    name: "User Profile",
+    path: "/profile",
+    name: "Profile",
     icon: "ni ni-single-02 text-yellow",
     component: <Profile />,
     layout: "/admin",
@@ -39,23 +38,9 @@ var routes = [
   {
     path: "/tables",
     name: "Tables",
-    icon: "ni ni-bullet-list-67 text-red",
+    icon: "ni ni-bullet-list-67 text-blue",
     component: <Tables />,
     layout: "/admin",
-  },
-  {
-    path: "/login",
-    name: "Login",
-    icon: "ni ni-key-25 text-info",
-    component: <Logout />,
-    layout: "/auth",
-  },
-  {
-    path: "/register",
-    name: "Register",
-    icon: "ni ni-circle-08 text-pink",
-    component: <Register />,
-    layout: "/auth",
   },
   {
     path: "/icons",
@@ -63,6 +48,13 @@ var routes = [
     icon: "ni ni-planet text-blue",
     component: <Icons />,
     layout: "/admin",
+  },
+  {
+    path: "/login",
+    name: "Logout",
+    icon: "ni ni-button-power text-red",
+    component: <Login />,
+    layout: "/auth",
   },
 ];
 export default routes;
