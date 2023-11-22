@@ -7,9 +7,9 @@ import AdminNavbar from "components/Navbars/AdminNavbar.js";
 import AdminFooter from "components/Footers/AdminFooter.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 
-import routes from "adminroutes.js";
+import routes from "userroutes.js";
 
-const Admin = (props) => {
+const User = (props) => {
   const mainContent = React.useRef(null);
   const location = useLocation();
 
@@ -21,7 +21,7 @@ const Admin = (props) => {
 
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/user") {
         return (
           <Route path={prop.path} element={prop.component} key={key} exact />
         );
@@ -60,7 +60,7 @@ const Admin = (props) => {
         />
         <Routes>
           {getRoutes(routes)}
-          <Route path="*" element={<Navigate to="/admin/dashboard" replace />} />
+          <Route path="*" element={<Navigate to="/user/dashboard" replace />} />
         </Routes>
         <Container fluid>
           <AdminFooter />
@@ -70,4 +70,4 @@ const Admin = (props) => {
   );
 };
 
-export default Admin;
+export default User;
