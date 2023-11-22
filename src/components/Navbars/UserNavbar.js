@@ -17,7 +17,7 @@ import {
   Media,
 } from "reactstrap";
 
-const AdminNavbar = (props) => {
+const UserNavbar = (props) => {
   return (
     <>
       <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">
@@ -55,7 +55,7 @@ const AdminNavbar = (props) => {
                 <DropdownItem className="noti-title" header tag="div">
                   <h6 className="text-overflow m-0">Welcome!</h6>
                 </DropdownItem>
-                <DropdownItem to="/admin/setting" tag={Link}>
+                <DropdownItem to="/user/setting" tag={Link}>
                   <i className="ni ni-settings-gear-65" />
                   <span>Setting</span>
                 </DropdownItem>
@@ -72,4 +72,4 @@ const AdminNavbar = (props) => {
   );
 };
 
-export default AdminNavbar;
+export default UserNavbar;

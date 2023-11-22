@@ -1,9 +1,7 @@
 import Dashboard from "views/admin/Dashboard.js";
-import Profile from "views/admin/Profile.js";
-import Calendar from "views/admin/Calendar.js";
+import Setting from "views/admin/Setting.js";
 import Login from "views/Login.js";
-import Tables from "views/admin/Tables.js";
-import Notes from "views/admin/Notes.js";
+import Management from "views/admin/Management.js";
 import Icons from "views/admin/Icons.js";
 
 var routes = [
@@ -15,38 +13,24 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/notes",
-    name: "Notes",
-    icon: "ni ni-collection text-info",
-    component: <Notes />,
-    layout: "/admin",
-  },
-  {
-    path: "/calendar",
-    name: "Calendar",
-    icon: "ni ni-calendar-grid-58 text-green",
-    component: <Calendar />,
-    layout: "/admin",
-  },
-  {
-    path: "/profile",
-    name: "Profile",
-    icon: "ni ni-single-02 text-yellow",
-    component: <Profile />,
-    layout: "/admin",
-  },
-  {
-    path: "/tables",
-    name: "Tables",
-    icon: "ni ni-bullet-list-67 text-blue",
-    component: <Tables />,
+    path: "/management",
+    name: "Management",
+    icon: "ni ni-archive-2 text-info",
+    component: <Management />,
     layout: "/admin",
   },
   {
     path: "/icons",
     name: "Icons",
-    icon: "ni ni-planet text-blue",
+    icon: "ni ni-planet text-green",
     component: <Icons />,
+    layout: "/admin",
+  },
+  {
+    path: "/setting",
+    name: "Setting",
+    icon: "ni ni-settings-gear-65",
+    component: <Setting />,
     layout: "/admin",
   },
   {

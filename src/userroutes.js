@@ -1,10 +1,8 @@
 import Dashboard from "views/user/Dashboard.js";
-import Profile from "views/user/Profile.js";
+import Setting from "views/user/Setting.js";
 import Calendar from "views/user/Calendar.js";
 import Login from "views/Login.js";
-import Tables from "views/user/Tables.js";
 import Notes from "views/user/Notes.js";
-import Icons from "views/user/Icons.js";
 
 var routes = [
   {
@@ -29,24 +27,10 @@ var routes = [
     layout: "/user",
   },
   {
-    path: "/profile",
-    name: "Profile",
-    icon: "ni ni-single-02 text-yellow",
-    component: <Profile />,
-    layout: "/user",
-  },
-  {
-    path: "/tables",
-    name: "Tables",
-    icon: "ni ni-bullet-list-67 text-blue",
-    component: <Tables />,
-    layout: "/user",
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "ni ni-planet text-blue",
-    component: <Icons />,
+    path: "/setting",
+    name: "Setting",
+    icon: "ni ni-settings-gear-65",
+    component: <Setting />,
     layout: "/user",
   },
   {

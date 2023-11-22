@@ -139,6 +139,17 @@ const Register = () => {
             </Form>
           </CardBody>
         </Card>
+        <Row className="mt-3">
+          <Col className="text-right" xs="12">
+            <a
+              className="text-light"
+              href="#pablo"
+              onClick={(e) => e.preventDefault()}
+            >
+              <small>Already a member?</small>
+            </a>
+          </Col>
+        </Row>
       </Col>
     </>
   );
