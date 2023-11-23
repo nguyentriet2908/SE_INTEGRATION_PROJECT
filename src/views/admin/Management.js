@@ -61,7 +61,7 @@ const Tables = () => {
                         </a>
                         <Media>
                           <span className="mb-0 text-sm">
-                            Argon Design System
+                            Management System
                           </span>
                         </Media>
                       </Media>
@@ -888,7 +888,7 @@ const Tables = () => {
                         </a>
                         <Media>
                           <span className="mb-0 text-sm">
-                            Argon Design System
+                          Management System
                           </span>
                         </Media>
                       </Media>
