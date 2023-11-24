@@ -5,6 +5,7 @@ import { Component } from 'react';
 
 import NotesHeader from "components/Headers/NotesHeader.js";
 import Scheduler from 'components/Scheduler';
+import Toolbar from 'components/Sche-toolbar';
 
 const data = [
   { start_date:'2023-11-24 6:00', end_date:'2023-11-24 8:00', text:'Event 1', id: 1},
@@ -22,7 +23,7 @@ class Calendar extends Component {
       const newMessage = { message };
       const messages = [
           newMessage,
-          this.state.messages
+          ...this.state.messages
       ];
 
       if (messages.length > maxLogLength) {
@@ -52,13 +53,23 @@ class Calendar extends Component {
           <Card className="shadow border-0">    
             <div className="Notes">
               <Col>
-                <div className="scheduler-container">
-                  <Scheduler
-                    events={data}
-                    timeFormatState={currentTimeFormatState}
-                    onDataUpdated={this.logDataUpdate}
-                  />
-                </div>
+                <Col>
+                  <div className="scheduler-container">
+                    <Scheduler
+                      events={data}
+                      timeFormatState={currentTimeFormatState}
+                      onDataUpdated={this.logDataUpdate}
+                    />
+                  </div>
+                </Col>
+                <Col>
+                  <div className="tool-bar">
+                    <Toolbar
+                      timeFormatState={currentTimeFormatState}
+                      onTimeFormatStateChange={this.handleTimeFormatStateChange}
+                    />
+                  </div>
+                </Col>
               </Col>
             </div>
           </Card>
