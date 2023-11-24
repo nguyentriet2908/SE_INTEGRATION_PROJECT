@@ -1,4 +1,4 @@
-# [Savig]
+# Savig
 
 ![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-react/argon-dashboard-react.gif)
 
