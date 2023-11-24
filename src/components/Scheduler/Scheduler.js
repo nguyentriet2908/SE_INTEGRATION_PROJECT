@@ -44,7 +44,7 @@ export default class Scheduler extends Component {
             'today',
             'next'
         ];
-        scheduler.config.hour_date = '%g:%i %A';
+        scheduler.config.hour_date = '%H:%i';
         scheduler.xy.scale_width = 70;
 
         this.initSchedulerEvents();
@@ -63,9 +63,8 @@ export default class Scheduler extends Component {
         scheduler.render();
     }
 
-    setHoursScaleFormat(state) {
-        scheduler.config.hour_date = state ? '%H:%i' : '%g:%i %A';
-        scheduler.templates.hour_scale = scheduler.date.date_to_str(scheduler.config.hour_date);
+    setHoursScaleFormat() {
+        scheduler.config.hour_date = '%H:%i';
     }
 
     render() {
