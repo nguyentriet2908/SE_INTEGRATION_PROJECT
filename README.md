@@ -1,4 +1,4 @@
-# [Savig](https://demos.creative-tim.com/argon-dashboard-react?ref=adr-github-readme)
+# [Savig]
 
 ![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-react/argon-dashboard-react.gif)
 
