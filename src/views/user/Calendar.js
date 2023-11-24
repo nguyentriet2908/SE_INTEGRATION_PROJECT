@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Card, Container, Row } from "reactstrap";
+import { Card, CardBody, CardFooter, Container, Row, Col } from "reactstrap";
 import { Component } from 'react';
 
 import NotesHeader from "components/Headers/NotesHeader.js";
@@ -8,8 +8,8 @@ import Scheduler from 'components/Scheduler';
 import Toolbar from 'components/Sche-toolbar';
 
 const data = [
-  { start_date:'2020-06-10 6:00', end_date:'2020-06-10 8:00', text:'Event 1', id: 1},
-  { start_date:'2020-06-13 10:00', end_date:'2020-06-13 18:00', text:'Event 2', id: 2 }
+  { start_date:'2023-11-24 6:00', end_date:'2023-11-24 8:00', text:'Event 1', id: 1},
+  { start_date:'2023-11-22 10:00', end_date:'2023-11-22 18:00', text:'Event 2', id: 2 }
 ];
 
 class Calendar extends Component {
@@ -49,32 +49,32 @@ class Calendar extends Component {
     return (
       <>
       <NotesHeader />
-      <Container className="mt--9" fluid>
-        <Row>
-          <div className="col">
-            <Card className="shadow border-0">
-              <div className="Notes">
-              
-                <div className='scheduler-container'>
-                  <Scheduler
-                    events={data}
-                    timeFormatState={currentTimeFormatState}
-                    onDataUpdated={this.logDataUpdate}
-                  />
-                </div>
-                <div className="tool-bar">
-                  <Toolbar
-                    timeFormatState={currentTimeFormatState}
-                    onTimeFormatStateChange={this.handleTimeFormatStateChange}
-                  />
-                </div>
-
-              </div>
-            </Card>
-          </div>
-        </Row>
-      </Container>
-    </>
+        <Container className="mt--9" fluid>
+          <Card className="shadow border-0">    
+            <div className="Notes">
+              <Col>
+                <Col>
+                  <div className="scheduler-container">
+                    <Scheduler
+                      events={data}
+                      timeFormatState={currentTimeFormatState}
+                      onDataUpdated={this.logDataUpdate}
+                    />
+                  </div>
+                </Col>
+                <Col>
+                  <div className="tool-bar">
+                    <Toolbar
+                      timeFormatState={currentTimeFormatState}
+                      onTimeFormatStateChange={this.handleTimeFormatStateChange}
+                    />
+                  </div>
+                </Col>
+              </Col>
+            </div>
+          </Card>
+        </Container>
+      </>
     );
   }
 }
