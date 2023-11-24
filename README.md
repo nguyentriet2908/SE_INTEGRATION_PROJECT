@@ -1,4 +1,4 @@
-# [Savig](https://demos.creative-tim.com/argon-dashboard-react?ref=adr-github-readme)
+# Savig
 
 ![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-react/argon-dashboard-react.gif)
 
@@ -20,7 +20,7 @@ If you want to get inspiration or just show something directly to your clients, 
 
 ## Quick start
 
-- [Download from Github](https://github.com/creativetimofficial/argon-dashboard-react/archive/master.zip).
+- [Download from Github](https://github.com/nguyentriet2908/SE_INTEGRATION_PROJECT.git).
 - Run code:
 - `npm install`.
 - `npm run build`.
