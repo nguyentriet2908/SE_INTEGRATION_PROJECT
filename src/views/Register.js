@@ -1,4 +1,5 @@
 // reactstrap components
+import { Link } from "react-router-dom";
 import {
   Button,
   Card,
@@ -17,32 +18,15 @@ import {
 const Register = () => {
   return (
     <>
-      <Col lg="6" md="8">
+      <Col lg="15" md="10">
         <Card className="bg-secondary shadow border-0">
           <CardHeader className="bg-transparent pb-5">
-            <div className="text-muted text-center mt-2 mb-4">
-              <small>Sign up with</small>
+            <div className="text-muted text-center mt-2 mb-3">
+              <small>Sign in with</small>
             </div>
-            <div className="text-center">
+            <div className="btn-wrapper text-center">
               <Button
-                className="btn-neutral btn-icon mr-4"
-                color="default"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
-                <span className="btn-inner--icon">
-                  <img
-                    alt="..."
-                    src={
-                      require("../assets/img/icons/common/github.svg")
-                        .default
-                    }
-                  />
-                </span>
-                <span className="btn-inner--text">Github</span>
-              </Button>
-              <Button
-                className="btn-neutral btn-icon"
+                className="btn-neutral"
                 color="default"
                 href="#pablo"
                 onClick={(e) => e.preventDefault()}
@@ -56,7 +40,54 @@ const Register = () => {
                     }
                   />
                 </span>
-                <span className="btn-inner--text">Google</span>
+              </Button>
+              <Button
+                className="btn-neutral"
+                color="default"
+                href="#pablo"
+                onClick={(e) => e.preventDefault()}
+              >
+                <span className="btn-inner--icon">
+                  <img
+                    alt="..."
+                    src={
+                      require("../assets/img/icons/common/github.svg")
+                        .default
+                    }
+                  />
+                </span>
+              </Button>
+              <Button
+                className="btn-neutral"
+                color="default"
+                href="#pablo"
+                onClick={(e) => e.preventDefault()}
+              >
+                <span className="btn-inner--icon">
+                  <img
+                    alt="..."
+                    src={
+                      require("../assets/img/icons/common/github.svg")
+                        .default
+                    }
+                  />
+                </span>
+              </Button>
+              <Button
+                className="btn-neutral"
+                color="default"
+                href="#pablo"
+                onClick={(e) => e.preventDefault()}
+              >
+                <span className="btn-inner--icon">
+                  <img
+                    alt="..."
+                    src={
+                      require("../assets/img/icons/common/github.svg")
+                        .default
+                    }
+                  />
+                </span>
               </Button>
             </div>
           </CardHeader>
@@ -136,20 +167,22 @@ const Register = () => {
                   Create account
                 </Button>
               </div>
+              <Row className="mt-3">
+                <Col className="text-right" xs="12">
+                  <a
+                    className="text-light"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    <Button className="mt-4" color="info" type="button" to="/auth/login" tag={Link}>
+                      Already a member?
+                    </Button>
+                  </a>
+                </Col>
+              </Row>
             </Form>
           </CardBody>
         </Card>
-        <Row className="mt-3">
-          <Col className="text-right" xs="12">
-            <a
-              className="text-light"
-              href="#pablo"
-              onClick={(e) => e.preventDefault()}
-            >
-              <small>Already a member?</small>
-            </a>
-          </Col>
-        </Row>
       </Col>
     </>
   );

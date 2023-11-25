@@ -57,7 +57,7 @@ function Notes() {
         <Row>
           <div className="col">
             <Card className="shadow border-0">
-              <div className="Notes">
+              <div className="NotesCalendar">
               <Sidebar addNote={addNote} />
               <NoteContainer
                 notes={notes}

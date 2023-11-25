@@ -73,6 +73,7 @@ export default class Scheduler extends Component {
         this.setHoursScaleFormat(timeFormatState);
         return (
             <div
+                className='calendar'
                 ref={ (input) => { this.schedulerContainer = input } }
                 style={ { width: '100%', height: '100%' } }
             ></div>

@@ -1,5 +1,6 @@
 import Login from "views/Login.js";
 import Register from "views/Register.js";
+import ForgotPass from "views/ForgotPass.js";
 
 var routes = [
   {
@@ -12,8 +13,13 @@ var routes = [
   {
     path: "/register",
     name: "Register",
-    icon: "ni ni-button-power text-red",
     component: <Register />,
+    layout: "/auth",
+  },
+  {
+    path: "/forgotpass",
+    name: "Forgot Password",
+    component: <ForgotPass />,
     layout: "/auth",
   },
 ];

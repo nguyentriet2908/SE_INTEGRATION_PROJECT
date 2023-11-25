@@ -131,20 +131,25 @@ const Sidebar = (props) => {
                 <span className="avatar avatar-sm rounded-circle">
                   <img
                     alt="..."
-                    src={require("../../assets/img/theme/team-1-800x800.jpg")}
+                    src={require("../../assets/img/theme/user.jpg")}
                   />
                 </span>
+                <Media className="ml-2 d-none d-lg-block">
+                    <span className="mb-0 text-sm font-weight-bold">
+                      Pham Huynh Quoc Thanh
+                    </span>
+                  </Media>
               </Media>
             </DropdownToggle>
             <DropdownMenu className="dropdown-menu-arrow" right>
               <DropdownItem className="noti-title" header tag="div">
                 <h6 className="text-overflow m-0">Welcome!</h6>
               </DropdownItem>
-              <DropdownItem>
+              <DropdownItem to="/user/setting" tag={Link}>
                 <i className="ni ni-settings-gear-65" />
                 <span>Setting</span>
               </DropdownItem>
-              <DropdownItem>
+              <DropdownItem to="/auth/login" tag={Link}>
                 <i className="ni ni-button-power text-red" />
                 <span>Logout</span>
               </DropdownItem>

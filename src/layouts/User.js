@@ -5,7 +5,7 @@ import { Container } from "reactstrap";
 // core components
 import UserNavbar from "components/Navbars/UserNavbar.js";
 import AdminFooter from "components/Footers/AdminFooter.js";
-import Sidebar from "components/Sidebar/Sidebar.js";
+import Sidebar from "components/Sidebar/Sidebar1a.js";
 
 import routes from "userroutes.js";
 
