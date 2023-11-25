@@ -21,8 +21,11 @@ import {
         <Col lg="15" md="10">
           <Card className="bg-secondary shadow border-0">
             <CardBody className="px-lg-5 py-lg-5">
+              <div className="text-center text-muted">
+                <h1>Forgot password?</h1>
+              </div>
               <div className="text-center text-muted mb-4">
-                <small>Or sign in with credentials</small>
+                <medium>Don't worry! It occurs. Please enter the email address linked with your account.</medium>
               </div>
               <Form role="form">
                 <FormGroup className="mb-3">
@@ -38,62 +41,35 @@ import {
                       autoComplete="new-email"
                     />
                   </InputGroup>
+                  <div className="text-center">
+                    <Button className="mt-4" color="primary" type="button">
+                      Send
+                    </Button>
+                  </div>
                 </FormGroup>
-                <FormGroup>
-                  <InputGroup className="input-group-alternative">
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="ni ni-lock-circle-open" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      placeholder="Password"
-                      type="password"
-                      autoComplete="new-password"
-                    />
-                  </InputGroup>
-                </FormGroup>
-                <div className="custom-control custom-control-alternative custom-checkbox">
-                  <input
-                    className="custom-control-input"
-                    id=" customCheckLogin"
-                    type="checkbox"
-                  />
-                  <label
-                    className="custom-control-label"
-                    htmlFor=" customCheckLogin"
-                  >
-                    <span className="text-muted">Remember me</span>
-                  </label>
-                </div>
-                <div className="text-center">
-                  <Button className="my-4" color="primary" type="button">
-                    Sign in
-                  </Button>
-                </div>
-                <Row className="mt-3">
-                    <Col xs="6">
+                <Row>
+                  <Col xs="6">
                     <a
-                        className="text-light"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
+                      className="text-light"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
                     >
-                        <Button className="mt-4" color="info" type="button" to="/auth/login" tag={Link}>
-                        <span>Already a member?</span>
-                        </Button>
+                      <Col className="mt-1" to="/auth/register" tag={Link}>
+                        <small>Create new account</small>
+                      </Col>
                     </a>
-                    </Col>
-                    <Col className="text-right" xs="6">
+                  </Col>
+                  <Col className="text-right" xs="6">
                     <a
-                        className="text-light"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
+                      className="text-light"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
                     >
-                        <Button className="mt-4" color="info" type="button" to="/auth/register" tag={Link}>
-                        <span>Create new account</span>
-                        </Button>
+                      <Col className="mt-1" to="/auth/login" tag={Link}>
+                        <small>Already a member?</small>
+                      </Col>
                     </a>
-                    </Col>
+                  </Col>
                 </Row>
               </Form>
             </CardBody>
