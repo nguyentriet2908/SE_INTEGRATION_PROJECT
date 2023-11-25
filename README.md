@@ -22,6 +22,6 @@ If you want to get inspiration or just show something directly to your clients, 
 
 - [Download from Github](https://github.com/nguyentriet2908/SE_INTEGRATION_PROJECT.git).
 - Run code:
-- `npm install`.
-- `npm run build`.
-- `npm start`.
+  `npm install`.
+  `npm run build`.
+  `npm start`.
