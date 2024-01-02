@@ -20,7 +20,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
-
+import { Link } from "react-router-dom";
 // core components
 import {
   chartOptions,
@@ -113,6 +113,16 @@ const Index = (props) => {
                     </h6>
                     <h2 className="mb-0">Total notes</h2>
                   </div>
+                  <div className="col text-right">
+                    <Button
+                      to="/user/notes"
+                      tag={Link}
+                      color="primary"
+                      size="sm"
+                    >
+                      See all
+                    </Button>
+                  </div>
                 </Row>
               </CardHeader>
               <CardBody>
@@ -137,9 +147,9 @@ const Index = (props) => {
                   </div>
                   <div className="col text-right">
                     <Button
+                      to="/user/calendar"
+                      tag={Link}
                       color="primary"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
                       size="sm"
                     >
                       See all
@@ -161,31 +171,31 @@ const Index = (props) => {
                     <th scope="row">Ex girlfriend's wedding</th>
                     <td className="text-success">31/01/2023</td>
                     <td className="text-info">07:00</td>
-                    <td className="text-warning">13:00</td>
+                    <td className="text-danger">13:00</td>
                   </tr>
                   <tr>
                     <th scope="row">Girlfriend's birthday</th>
                     <td className="text-success">03/02/2023</td>
                     <td className="text-info">All day</td>
-                    <td className="text-warning">All day</td>
+                    <td className="text-danger">All day</td>
                   </tr>
                   <tr>
                     <th scope="row">SE integration project meeting</th>
                     <td className="text-success">05/02/2023</td>
                     <td className="text-info">21:00</td>
-                    <td className="text-warning">23:00</td>
+                    <td className="text-danger">23:00</td>
                   </tr>
                   <tr>
                     <th scope="row">Valentine day</th>
                     <td className="text-success">14/02/2023</td>
                     <td className="text-info">All day</td>
-                    <td className="text-warning">All day</td>
+                    <td className="text-danger">All day</td>
                   </tr>
                   <tr>
                     <th scope="row">Football match</th>
                     <td className="text-success">16/02/2023</td>
                     <td className="text-info">15:00</td>
-                    <td className="text-warning">18:00</td>
+                    <td className="text-danger">18:00</td>
                   </tr>
                 </tbody>
               </Table>

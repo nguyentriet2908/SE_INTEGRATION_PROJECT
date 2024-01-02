@@ -31,7 +31,7 @@ const Header = () => {
                       </Col>
                     </Row>
                     <p className="mt-3 mb-0 text-muted text-sm">
-                      <span className="text-warning mr-2">
+                      <span className="text-danger mr-2">
                         <i className="fa fa-arrow-down" /> 27.28%
                       </span>{" "}
                       <span className="text-nowrap">Since last month</span>
@@ -53,7 +53,7 @@ const Header = () => {
                         <span className="h2 font-weight-bold mb-0">15</span>
                       </div>
                       <Col className="col-auto">
-                        <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
+                        <div className="icon icon-shape bg-danger text-white rounded-circle shadow">
                           <i className="ni ni-calendar-grid-58" />
                         </div>
                       </Col>

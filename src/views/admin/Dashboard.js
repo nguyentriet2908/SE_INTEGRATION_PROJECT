@@ -20,7 +20,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
-
+import { Link } from "react-router-dom";
 // core components
 import {
   chartOptions,
@@ -114,9 +114,9 @@ const Index = (props) => {
                   </div>
                   <div className="col text-right">
                     <Button
+                      to="/admin/management"
+                      tag={Link}
                       color="primary"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
                       size="sm"
                     >
                       See all
@@ -143,11 +143,11 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">nguyentran186</th>
+                    <th scope="row">LongSolomon</th>
                     <td>25/10/2023</td>
                     <td>14/01/2024</td>
                     <td>
-                      <i className="fas fa-arrow-down text-warning mr-3" />{" "}
+                      <i className="fas fa-arrow-down text-danger mr-3" />{" "}
                       4,13%
                     </td>
                   </tr>
@@ -156,7 +156,7 @@ const Index = (props) => {
                     <td>15/06/2023</td>
                     <td>14/01/2024</td>
                     <td>
-                      <i className="fas fa-arrow-down text-warning mr-3" />{" "}
+                      <i className="fas fa-arrow-down text-danger mr-3" />{" "}
                       2,49%
                     </td>
                   </tr>
@@ -186,17 +186,7 @@ const Index = (props) => {
               <CardHeader className="border-0">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h3 className="mb-0">Other admins</h3>
-                  </div>
-                  <div className="col text-right">
-                    <Button
-                      color="primary"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                      size="sm"
-                    >
-                      See all
-                    </Button>
+                    <h3 className="mb-0">Admins</h3>
                   </div>
                 </Row>
               </CardHeader>
@@ -242,7 +232,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">LongSolomon</th>
+                    <th scope="row">nguyentran186</th>
                     <td>01/10/2022</td>
                     <td>
                       <div className="d-flex align-items-center">
