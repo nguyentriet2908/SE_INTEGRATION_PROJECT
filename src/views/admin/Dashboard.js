@@ -50,7 +50,7 @@ const Index = (props) => {
       {/* Page content */}
       <Container className="mt--7" fluid>
         <Row>
-          <Col className="mb-5 mb-xl-0" xl="8">
+          <Col className="mb-5 mb-xl-0" xl="12">
             <Card className="bg-gradient-default shadow">
               <CardHeader className="bg-transparent">
                 <Row className="align-items-center">
@@ -58,7 +58,7 @@ const Index = (props) => {
                     <h6 className="text-uppercase text-light ls-1 mb-1">
                       Overview
                     </h6>
-                    <h2 className="text-white mb-0">Sales value</h2>
+                    <h2 className="text-white mb-0">Page visits</h2>
                   </div>
                   <div className="col">
                     <Nav className="justify-content-end" pills>
@@ -103,29 +103,6 @@ const Index = (props) => {
               </CardBody>
             </Card>
           </Col>
-          <Col xl="4">
-            <Card className="shadow">
-              <CardHeader className="bg-transparent">
-                <Row className="align-items-center">
-                  <div className="col">
-                    <h6 className="text-uppercase text-muted ls-1 mb-1">
-                      Performance
-                    </h6>
-                    <h2 className="mb-0">Total orders</h2>
-                  </div>
-                </Row>
-              </CardHeader>
-              <CardBody>
-                {/* Chart */}
-                <div className="chart">
-                  <Bar
-                    data={chartExample2.data}
-                    options={chartExample2.options}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
         </Row>
         <Row className="mt-5">
           <Col className="mb-5 mb-xl-0" xl="8">
@@ -133,7 +110,7 @@ const Index = (props) => {
               <CardHeader className="border-0">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h3 className="mb-0">Page visits</h3>
+                    <h3 className="mb-0">Users</h3>
                   </div>
                   <div className="col text-right">
                     <Button
@@ -150,54 +127,54 @@ const Index = (props) => {
               <Table className="align-items-center table-flush" responsive>
                 <thead className="thead-light">
                   <tr>
-                    <th scope="col">Page name</th>
-                    <th scope="col">Visitors</th>
-                    <th scope="col">Unique users</th>
-                    <th scope="col">Bounce rate</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Registration date</th>
+                    <th scope="col">Most recent visit</th>
+                    <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">/admin/</th>
-                    <td>4,569</td>
-                    <td>340</td>
+                    <th scope="row">nguyentriet2908</th>
+                    <td>10/11/2023</td>
+                    <td>15/01/2024</td>
                     <td>
-                      <i className="fas fa-arrow-up text-success mr-3" /> 46,53%
+                      <i className="fas fa-arrow-up text-success mr-3" /> 11,53%
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/admin</th>
-                    <td>3,985</td>
-                    <td>319</td>
+                    <th scope="row">nguyentran186</th>
+                    <td>25/10/2023</td>
+                    <td>14/01/2024</td>
                     <td>
                       <i className="fas fa-arrow-down text-warning mr-3" />{" "}
-                      46,53%
+                      4,13%
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/admin</th>
-                    <td>3,513</td>
-                    <td>294</td>
+                    <th scope="row">L0rd-0f-w33bs</th>
+                    <td>15/06/2023</td>
+                    <td>14/01/2024</td>
                     <td>
                       <i className="fas fa-arrow-down text-warning mr-3" />{" "}
-                      36,49%
+                      2,49%
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/admin</th>
-                    <td>2,050</td>
-                    <td>147</td>
+                    <th scope="row">phamhuynh03</th>
+                    <td>01/01/2023</td>
+                    <td>15/01/2024</td>
                     <td>
-                      <i className="fas fa-arrow-up text-success mr-3" /> 50,87%
+                      <i className="fas fa-arrow-up text-success mr-3" /> 8,89%
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/admin</th>
-                    <td>1,795</td>
-                    <td>190</td>
+                    <th scope="row">trannhatminh</th>
+                    <td>01/01/2023</td>
+                    <td>15/01/2024</td>
                     <td>
-                      <i className="fas fa-arrow-down text-danger mr-3" />{" "}
-                      46,53%
+                      <i className="fas fa-arrow-up text-success mr-3" />{" "}
+                      12.66%
                     </td>
                   </tr>
                 </tbody>
@@ -209,7 +186,7 @@ const Index = (props) => {
               <CardHeader className="border-0">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h3 className="mb-0">Social traffic</h3>
+                    <h3 className="mb-0">Other admins</h3>
                   </div>
                   <div className="col text-right">
                     <Button
@@ -226,38 +203,22 @@ const Index = (props) => {
               <Table className="align-items-center table-flush" responsive>
                 <thead className="thead-light">
                   <tr>
-                    <th scope="col">Referral</th>
-                    <th scope="col">Visitors</th>
-                    <th scope="col" />
+                    <th scope="col">Username</th>
+                    <th scope="col">Start date</th>
+                    <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">Facebook</th>
-                    <td>1,480</td>
+                    <th scope="row">zzeennoo</th>
+                    <td>01/10/2022</td>
                     <td>
                       <div className="d-flex align-items-center">
-                        <span className="mr-2">60%</span>
+                        <span className="mr-2">90%</span>
                         <div>
                           <Progress
                             max="100"
-                            value="60"
-                            barClassName="bg-gradient-danger"
-                          />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Facebook</th>
-                    <td>5,480</td>
-                    <td>
-                      <div className="d-flex align-items-center">
-                        <span className="mr-2">70%</span>
-                        <div>
-                          <Progress
-                            max="100"
-                            value="70"
+                            value="90"
                             barClassName="bg-gradient-success"
                           />
                         </div>
@@ -265,27 +226,15 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">Google</th>
-                    <td>4,807</td>
+                    <th scope="row">khoa2807</th>
+                    <td>01/10/2022</td>
                     <td>
                       <div className="d-flex align-items-center">
-                        <span className="mr-2">80%</span>
-                        <div>
-                          <Progress max="100" value="80" />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Instagram</th>
-                    <td>3,678</td>
-                    <td>
-                      <div className="d-flex align-items-center">
-                        <span className="mr-2">75%</span>
+                        <span className="mr-2">55%</span>
                         <div>
                           <Progress
                             max="100"
-                            value="75"
+                            value="55"
                             barClassName="bg-gradient-info"
                           />
                         </div>
@@ -293,15 +242,43 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">twitter</th>
-                    <td>2,645</td>
+                    <th scope="row">LongSolomon</th>
+                    <td>01/10/2022</td>
                     <td>
                       <div className="d-flex align-items-center">
-                        <span className="mr-2">30%</span>
+                        <span className="mr-2">75%</span>
+                        <div>
+                          <Progress max="100" value="75" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">minhhoangkhmtclc254</th>
+                    <td>01/06/2022</td>
+                    <td>
+                      <div className="d-flex align-items-center">
+                        <span className="mr-2">50%</span>
                         <div>
                           <Progress
                             max="100"
-                            value="30"
+                            value="50"
+                            barClassName="bg-gradient-info"
+                          />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Khoa280703</th>
+                    <td>01/06/2022</td>
+                    <td>
+                      <div className="d-flex align-items-center">
+                        <span className="mr-2">25%</span>
+                        <div>
+                          <Progress
+                            max="100"
+                            value="25"
                             barClassName="bg-gradient-warning"
                           />
                         </div>

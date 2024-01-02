@@ -20,7 +20,7 @@ const UserHeader = () => {
         <Container className="d-flex align-items-center" fluid>
           <Row>
             <Col lg="7" md="10">
-              <h1 className="display-2 text-white">Hello, Minh Triet</h1>
+              <h1 className="display-2 text-white">Hello, zzeennoo</h1>
               <h2 className="display-5 text-white">This is an administrator account</h2>
               <p className="text-white mt-0 mb-5">
                 Here is your profile page. You can see the progress you have made

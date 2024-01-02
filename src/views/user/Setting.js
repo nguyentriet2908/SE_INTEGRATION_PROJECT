@@ -63,15 +63,15 @@ const Profile = () => {
                   <div className="col">
                     <div className="card-profile-stats d-flex justify-content-center mt-md-5">
                       <div>
-                        <span className="heading">3</span>
+                        <span className="heading">8</span>
                         <span className="description">Friends</span>
                       </div>
                       <div>
-                        <span className="heading">12</span>
+                        <span className="heading">16</span>
                         <span className="description">Notes</span>
                       </div>
                       <div>
-                        <span className="heading">4</span>
+                        <span className="heading">15</span>
                         <span className="description">Events</span>
                       </div>
                     </div>
@@ -80,7 +80,7 @@ const Profile = () => {
                 <div className="text-center">
                   <h3>
                     Pham Huynh Quoc Thanh
-                    <span className="font-weight-light">, 20</span>
+                    <span className="font-weight-light">, 21</span>
                   </h3>
                   <div className="h5 font-weight-300">
                     <i className="ni location_pin mr-2" />

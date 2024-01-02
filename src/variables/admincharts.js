@@ -186,12 +186,12 @@ function chartOptions() {
         elements: {
           point: {
             radius: 0,
-            backgroundColor: colors.theme["primary"],
+            backgroundColor: colors.theme["info"],
           },
           line: {
             tension: 0.4,
             borderWidth: 4,
-            borderColor: colors.theme["primary"],
+            borderColor: colors.theme["info"],
             backgroundColor: colors.transparent,
             borderCapStyle: "rounded",
           },
@@ -199,7 +199,7 @@ function chartOptions() {
             backgroundColor: colors.theme["warning"],
           },
           arc: {
-            backgroundColor: colors.theme["primary"],
+            backgroundColor: colors.theme["info"],
             borderColor: mode === "dark" ? colors.gray[800] : colors.white,
             borderWidth: 4,
           },
@@ -328,7 +328,7 @@ let chartExample1 = {
       datasets: [
         {
           label: "Month statics",
-          data: [65, 80, 68, 55, 98, 98, 112, 89, 92, 120, 90, 88],
+          data: [935, 980, 968, 1055, 982, 1098, 1129, 1189, 969, 1117, 1047, 1146],
         },
       ],
     };
@@ -339,7 +339,7 @@ let chartExample1 = {
       datasets: [
         {
           label: "Week statics",
-          data: [2, 0, 1, 0, 1, 3, 4, 1],
+          data: [32, 40, 41, 35, 38, 36, 40, 42],
         },
       ],
     };
@@ -377,16 +377,6 @@ let chartExample2 = {
         },
       },
     },
-  },
-  data: {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    datasets: [
-      {
-        label: "Statics",
-        data: [12, 25, 16, 20, 14, 16, 10, 8, 15, 25, 16, 22],
-        maxBarThickness: 10,
-      },
-    ],
   },
 };
 

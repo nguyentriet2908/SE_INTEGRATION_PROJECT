@@ -60,27 +60,12 @@ const Profile = () => {
               </CardHeader>
               <CardBody className="pt-0 pt-md-4">
                 <Row>
-                  <div className="col">
-                    <div className="card-profile-stats d-flex justify-content-center mt-md-5">
-                      <div>
-                        <span className="heading">4</span>
-                        <span className="description">Friends</span>
-                      </div>
-                      <div>
-                        <span className="heading">20</span>
-                        <span className="description">Users</span>
-                      </div>
-                      <div>
-                        <span className="heading">2</span>
-                        <span className="description">Online Admins</span>
-                      </div>
-                    </div>
-                  </div>
+                  <div className="card-profile-stats d-flex justify-content-center mt-md-5"></div>
                 </Row>
                 <div className="text-center">
                   <h3>
                     Tran Minh Triet
-                    <span className="font-weight-light">, 20</span>
+                    <span className="font-weight-light">, 21</span>
                   </h3>
                   <div className="h5 font-weight-300">
                     <i className="ni location_pin mr-2" />

@@ -82,7 +82,7 @@ const Header = () => {
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
-                          <i className="fas fa-users" />
+                          <i className="ni ni-curved-next" />
                         </div>
                       </Col>
                     </Row>
@@ -104,9 +104,9 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          Page visits
+                          Friends
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">4</span>
+                        <span className="h2 font-weight-bold mb-0">8</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-info text-white rounded-circle shadow">
@@ -116,9 +116,9 @@ const Header = () => {
                     </Row>
                     <p className="mt-3 mb-0 text-muted text-sm">
                       <span className="text-success mr-2">
-                        <i className="fas fa-arrow-up" /> 33.33%
+                        <i className="fas fa-arrow-up" /> 14.29%
                       </span>{" "}
-                      <span className="text-nowrap">Since yesterday</span>
+                      <span className="text-nowrap">Since last month</span>
                     </p>
                   </CardBody>
                 </Card>
