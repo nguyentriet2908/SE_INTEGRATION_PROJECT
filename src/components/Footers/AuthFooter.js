@@ -14,7 +14,7 @@ const Login = () => {
                 © {new Date().getFullYear()}{" "}
                 <a
                   className="font-weight-bold ml-1"
-                  href="https://www.creative-tim.com?ref=adr-auth-footer"
+                  href="https://github.com/nguyentriet2908/SE_INTEGRATION_PROJECT"
                   target="_blank"
                 >
                   Savig
@@ -25,26 +25,26 @@ const Login = () => {
               <Nav className="nav-footer justify-content-center justify-content-xl-end">
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com/presentation?ref=adr-auth-footer"
+                    href="https://github.com/nguyentriet2908/SE_INTEGRATION_PROJECT"
                     target="_blank"
                   >
-                    About Us
+                    Github
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="http://blog.creative-tim.com?ref=adr-auth-footer"
-                    target="_blank"
-                  >
-                    Blog
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md?ref=adr-auth-footer"
+                    href="https://www.facebook.com/phamhuynh.quocthanh03/"
                     target="_blank"
                   >
                     Contact
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    href="https://forms.gle/7VjMRDyF7bzy8S3L8"
+                    target="_blank"
+                  >
+                    Report
                   </NavLink>
                 </NavItem>
               </Nav>

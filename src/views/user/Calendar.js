@@ -7,8 +7,8 @@ import NotesHeader from "components/Headers/NotesHeader.js";
 import Scheduler from 'components/Scheduler';
 
 const data = [
-  { start_date:'2023-11-24 6:00', end_date:'2023-11-24 8:00', text:'Event 1', id: 1},
-  { start_date:'2023-11-22 10:00', end_date:'2023-11-22 18:00', text:'Event 2', id: 2 }
+  { start_date:'2024-1-1 6:00', end_date:'2024-1-1 8:00', text:'Event 1', id: 1},
+  { start_date:'2023-12-28 10:00', end_date:'2023-12-28 18:00', text:'Event 2', id: 2 }
 ];
 
 class Calendar extends Component {

@@ -19,13 +19,13 @@ var routes = [
     component: <Management />,
     layout: "/admin",
   },
-  {
+  /*{
     path: "/icons",
     name: "Icons",
     icon: "ni ni-planet text-green",
     component: <Icons />,
     layout: "/admin",
-  },
+  },*/
   {
     path: "/setting",
     name: "Setting",
