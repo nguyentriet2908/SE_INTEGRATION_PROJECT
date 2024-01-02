@@ -27,9 +27,9 @@ import {
   parseOptions,
   chartExample1,
   chartExample2,
-} from "variables/charts.js";
+} from "variables/usercharts.js";
 
-import Header from "components/Headers/Header.js";
+import Header from "components/Headers/userStaticsHeader.js";
 
 const Index = (props) => {
   const [activeNav, setActiveNav] = useState(1);
@@ -58,7 +58,7 @@ const Index = (props) => {
                     <h6 className="text-uppercase text-light ls-1 mb-1">
                       Overview
                     </h6>
-                    <h2 className="text-white mb-0">Sales value</h2>
+                    <h2 className="text-white mb-0">Page visits</h2>
                   </div>
                   <div className="col">
                     <Nav className="justify-content-end" pills>
@@ -109,9 +109,9 @@ const Index = (props) => {
                 <Row className="align-items-center">
                   <div className="col">
                     <h6 className="text-uppercase text-muted ls-1 mb-1">
-                      Performance
+                      Statics
                     </h6>
-                    <h2 className="mb-0">Total orders</h2>
+                    <h2 className="mb-0">Total notes</h2>
                   </div>
                 </Row>
               </CardHeader>
@@ -128,12 +128,12 @@ const Index = (props) => {
           </Col>
         </Row>
         <Row className="mt-5">
-          <Col className="mb-5 mb-xl-0" xl="8">
+          <Col className="mb-5 mb-xl-0" xl="12">
             <Card className="shadow">
               <CardHeader className="border-0">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h3 className="mb-0">Page visits</h3>
+                    <h3 className="mb-0">Upcoming events</h3>
                   </div>
                   <div className="col text-right">
                     <Button
@@ -150,163 +150,42 @@ const Index = (props) => {
               <Table className="align-items-center table-flush" responsive>
                 <thead className="thead-light">
                   <tr>
-                    <th scope="col">Page name</th>
-                    <th scope="col">Visitors</th>
-                    <th scope="col">Unique users</th>
-                    <th scope="col">Bounce rate</th>
+                    <th scope="col">Event name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Start time</th>
+                    <th scope="col">End time</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">/user/</th>
-                    <td>4,569</td>
-                    <td>340</td>
-                    <td>
-                      <i className="fas fa-arrow-up text-success mr-3" /> 46,53%
-                    </td>
+                    <th scope="row">Ex girlfriend's wedding</th>
+                    <td className="text-success">31/01/2023</td>
+                    <td className="text-info">07:00</td>
+                    <td className="text-warning">13:00</td>
                   </tr>
                   <tr>
-                    <th scope="row">/user</th>
-                    <td>3,985</td>
-                    <td>319</td>
-                    <td>
-                      <i className="fas fa-arrow-down text-warning mr-3" />{" "}
-                      46,53%
-                    </td>
+                    <th scope="row">Girlfriend's birthday</th>
+                    <td className="text-success">03/02/2023</td>
+                    <td className="text-info">All day</td>
+                    <td className="text-warning">All day</td>
                   </tr>
                   <tr>
-                    <th scope="row">/user</th>
-                    <td>3,513</td>
-                    <td>294</td>
-                    <td>
-                      <i className="fas fa-arrow-down text-warning mr-3" />{" "}
-                      36,49%
-                    </td>
+                    <th scope="row">SE integration project meeting</th>
+                    <td className="text-success">05/02/2023</td>
+                    <td className="text-info">21:00</td>
+                    <td className="text-warning">23:00</td>
                   </tr>
                   <tr>
-                    <th scope="row">/user</th>
-                    <td>2,050</td>
-                    <td>147</td>
-                    <td>
-                      <i className="fas fa-arrow-up text-success mr-3" /> 50,87%
-                    </td>
+                    <th scope="row">Valentine day</th>
+                    <td className="text-success">14/02/2023</td>
+                    <td className="text-info">All day</td>
+                    <td className="text-warning">All day</td>
                   </tr>
                   <tr>
-                    <th scope="row">/user</th>
-                    <td>1,795</td>
-                    <td>190</td>
-                    <td>
-                      <i className="fas fa-arrow-down text-danger mr-3" />{" "}
-                      46,53%
-                    </td>
-                  </tr>
-                </tbody>
-              </Table>
-            </Card>
-          </Col>
-          <Col xl="4">
-            <Card className="shadow">
-              <CardHeader className="border-0">
-                <Row className="align-items-center">
-                  <div className="col">
-                    <h3 className="mb-0">Social traffic</h3>
-                  </div>
-                  <div className="col text-right">
-                    <Button
-                      color="primary"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                      size="sm"
-                    >
-                      See all
-                    </Button>
-                  </div>
-                </Row>
-              </CardHeader>
-              <Table className="align-items-center table-flush" responsive>
-                <thead className="thead-light">
-                  <tr>
-                    <th scope="col">Referral</th>
-                    <th scope="col">Visitors</th>
-                    <th scope="col" />
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Facebook</th>
-                    <td>1,480</td>
-                    <td>
-                      <div className="d-flex align-items-center">
-                        <span className="mr-2">60%</span>
-                        <div>
-                          <Progress
-                            max="100"
-                            value="60"
-                            barClassName="bg-gradient-danger"
-                          />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Facebook</th>
-                    <td>5,480</td>
-                    <td>
-                      <div className="d-flex align-items-center">
-                        <span className="mr-2">70%</span>
-                        <div>
-                          <Progress
-                            max="100"
-                            value="70"
-                            barClassName="bg-gradient-success"
-                          />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Google</th>
-                    <td>4,807</td>
-                    <td>
-                      <div className="d-flex align-items-center">
-                        <span className="mr-2">80%</span>
-                        <div>
-                          <Progress max="100" value="80" />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Instagram</th>
-                    <td>3,678</td>
-                    <td>
-                      <div className="d-flex align-items-center">
-                        <span className="mr-2">75%</span>
-                        <div>
-                          <Progress
-                            max="100"
-                            value="75"
-                            barClassName="bg-gradient-info"
-                          />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">twitter</th>
-                    <td>2,645</td>
-                    <td>
-                      <div className="d-flex align-items-center">
-                        <span className="mr-2">30%</span>
-                        <div>
-                          <Progress
-                            max="100"
-                            value="30"
-                            barClassName="bg-gradient-warning"
-                          />
-                        </div>
-                      </div>
-                    </td>
+                    <th scope="row">Football match</th>
+                    <td className="text-success">16/02/2023</td>
+                    <td className="text-info">15:00</td>
+                    <td className="text-warning">18:00</td>
                   </tr>
                 </tbody>
               </Table>

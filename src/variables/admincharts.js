@@ -1,8 +1,4 @@
 const Chart = require("chart.js");
-//
-// Chart extension for making the bars rounded
-// Code from: https://codepen.io/jedtrow/full/ygRYgo
-//
 
 Chart.elements.Rectangle.prototype.draw = function () {
   var ctx = this._chart.ctx;
@@ -302,7 +298,7 @@ let chartExample1 = {
           ticks: {
             callback: function (value) {
               if (!(value % 10)) {
-                return "$" + value + "k";
+                return value;
               }
             },
           },
@@ -320,7 +316,7 @@ let chartExample1 = {
             content += label;
           }
 
-          content += "$" + yLabel + "k";
+          content += yLabel;
           return content;
         },
       },
@@ -328,22 +324,22 @@ let chartExample1 = {
   },
   data1: (canvas) => {
     return {
-      labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
       datasets: [
         {
-          label: "Performance",
-          data: [0, 20, 10, 30, 15, 40, 20, 60, 60],
+          label: "Month statics",
+          data: [65, 80, 68, 55, 98, 98, 112, 89, 92, 120, 90, 88],
         },
       ],
     };
   },
   data2: (canvas) => {
     return {
-      labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
       datasets: [
         {
-          label: "Performance",
-          data: [0, 20, 5, 25, 10, 30, 15, 40, 40],
+          label: "Week statics",
+          data: [2, 0, 1, 0, 1, 3, 4, 1],
         },
       ],
     };
@@ -383,11 +379,11 @@ let chartExample2 = {
     },
   },
   data: {
-    labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [
       {
-        label: "Sales",
-        data: [25, 20, 30, 22, 17, 29],
+        label: "Statics",
+        data: [12, 25, 16, 20, 14, 16, 10, 8, 15, 25, 16, 22],
         maxBarThickness: 10,
       },
     ],

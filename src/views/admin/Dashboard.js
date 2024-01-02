@@ -27,9 +27,9 @@ import {
   parseOptions,
   chartExample1,
   chartExample2,
-} from "variables/charts.js";
+} from "variables/admincharts.js";
 
-import Header from "components/Headers/Header.js";
+import Header from "components/Headers/adminStaticsHeader.js";
 
 const Index = (props) => {
   const [activeNav, setActiveNav] = useState(1);
