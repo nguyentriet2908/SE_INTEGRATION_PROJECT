@@ -140,7 +140,7 @@ const Profile = () => {
                           </label>
                           <Input
                             className="form-control-alternative"
-                            defaultValue="quocthanh03"
+                            defaultValue="phamhuynh03"
                             id="input-username"
                             placeholder="Username"
                             type="text"
