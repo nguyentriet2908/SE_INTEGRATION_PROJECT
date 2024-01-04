@@ -175,25 +175,25 @@ const Index = (props) => {
                   </tr>
                   <tr>
                     <th scope="row">Girlfriend's birthday</th>
-                    <td className="text-success">03/02/2023</td>
+                    <td className="text-success">03/02/2024</td>
                     <td className="text-info">All day</td>
                     <td className="text-danger">All day</td>
                   </tr>
                   <tr>
                     <th scope="row">SE integration project meeting</th>
-                    <td className="text-success">05/02/2023</td>
+                    <td className="text-success">05/02/2024</td>
                     <td className="text-info">21:00</td>
                     <td className="text-danger">23:00</td>
                   </tr>
                   <tr>
                     <th scope="row">Valentine day</th>
-                    <td className="text-success">14/02/2023</td>
+                    <td className="text-success">14/02/2024</td>
                     <td className="text-info">All day</td>
                     <td className="text-danger">All day</td>
                   </tr>
                   <tr>
                     <th scope="row">Football match</th>
-                    <td className="text-success">16/02/2023</td>
+                    <td className="text-success">16/02/2024</td>
                     <td className="text-info">15:00</td>
                     <td className="text-danger">18:00</td>
                   </tr>
