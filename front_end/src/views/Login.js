@@ -41,7 +41,7 @@ const Login = () => {
     //   <Route path="/user/*" element={<UserLayout />} />
     // );
     //return <Navigate replace to="/user/*"/>;
-    if( (email=='Long@gmail.com' || email=='Triet@gmail.com') && pwd=='123')
+    if( (email=='Long@gmail.com' || email=='user@gmail.com' || email=='quocthanh.280603@gmail.com') && pwd=='123')
     navigate("/user/*");
     else if(email=='admin@gmail.com' && pwd=='321')
     navigate('/admin/*');

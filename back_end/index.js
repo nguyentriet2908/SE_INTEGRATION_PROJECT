@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 async function connect(){
 
     try {
-        await mongoose.connect(process.env.MONGO_URL);
+        await mongoose.connect('mongodb+srv://Long:RIhNucxKywHdxorc@cluster0.dw4ykc7.mongodb.net/SE_Project?retryWrites=true&w=majority');
         console.log('successfully');
     } catch (error) {
         console.log('fail eo eo');
