@@ -21,8 +21,8 @@ Savig provides the following features:
 -  Note down ideas quickly, and easily organize notes by classifying them into several categories.
 -  Organize all events and schedules in a systematic way to track and manage easier.
 
-2. For web managers
-- Has managing tools for configuring all system preferences as well as other related tasks which includes features for sending messages, locking and deleting user accounts, as well as assigning roles and permissions.
+2. For web managers:
+- Have managing tools for configuring all system preferences as well as other related tasks which includes features for sending messages, locking and deleting user accounts, as well as assigning roles and permissions.
 
 ## Installation
 
