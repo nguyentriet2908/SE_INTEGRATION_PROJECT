@@ -15,13 +15,13 @@ This is the reason why we decided to create Savig - a note-taking and task manag
 - [Installation](#installation)
 
 ## Features
-HCMUT-SSPS provides the following features:
+Savig provides the following features:
 
-1. For students and lecturers:
+1. For app users:
 -  Note down ideas quickly, and easily organize notes by classifying them into several categories.
 -  Organize all events and schedules in a systematic way to track and manage easier.
 
-2. For Student Printing Service Officer (SPSO)
+2. For web managers
 - Has managing tools for configuring all system preferences as well as other related tasks which includes features for sending messages, locking and deleting user accounts, as well as assigning roles and permissions.
 
 ## Installation
