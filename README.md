@@ -8,7 +8,7 @@ Moreover, it not only helps in summarizing and storing the information we need t
 
 This is the reason why we decided to create Savig - a note-taking and task management website. And this is our [demo](https://savig-project-sbsk.vercel.app/auth/login).
 
-## Table of content!
+## Table of content
 
 - [Introduction](#introduction)
 - [Features](#features)
